@@ -1,0 +1,16 @@
+.gamecenter{
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: 	rgb(235, 203, 164);
+    margin: auto;
+    width: 110vh;
+    margin-top: 5vh;
+    border-radius: 5px;
+    border-width: 0.8vh;
+    border-style: solid;
+    border-color:rgb(41, 19, 7);
+    border-radius: 5px;
+}

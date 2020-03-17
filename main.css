@@ -1,0 +1,19 @@
+body{
+    background-image: url('images/wood.jpg');
+    background-size: cover;
+}
+.header{
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    position: static;
+    background-color: black;
+    color: blanchedalmond;
+    border-bottom-color: gray;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+}
+.about{
+    color: blanchedalmond;
+    height:500px;
+}
