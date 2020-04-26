@@ -1,82 +1,87 @@
-.ChessBoard-border{
-    border-width: 0.8vh;
-    border-style: solid;
-    border-color:rgb(41, 19, 7);
-    margin-right: 5vh;
-    border-radius: 5px;
-    background-color:  rgb(139, 92, 61);
-    max-height: 64vh;
+.chessboard{
+    background-color: white;
 }
-.ChessBoard{
-    width: 60vh;
-    height: 60vh;
-    display: grid;
-    grid-template-areas:
-      "ranks squares"
-      ". files";
-    grid-template-columns: 4vh 1fr;
-    grid-template-rows: 1fr 4vh;
-    border-width: 4vh;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-color:   rgb(139, 92, 61);
-    background-color:  rgb(139, 92, 61);
-}
-.squares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-area: squares;
-    border: rgb(41, 19, 7);
-    border-width: 0.5vh;
-    border-radius: 5px;
-    border-style: solid;
-}
-.ranks{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-area: ranks;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    background-color: rgb(139, 92, 61);
-    color: rgb(255, 235, 211);
-    font-family: Futura;
-    font-size: 1.7vh;
-}
-.rank{
-    padding-top: 2.4vh;
-    text-align: center;
-}
-.files{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-area: files;
-    text-align: center;
-    padding-top: 0.8vh;
-    padding-left: 0.5vh;
-    padding-right: 0.5vh;
-    background-color:rgb(139, 92, 61);
-    color: rgb(255, 235, 211);
-    font-family: Futura;
-    font-size: 1.7vh;
+#overlay{
+    position: absolute;
+    width: 80vh;
+    height: 80vh;
+    resize: inherit;
 }
 .white-square{
-    padding-top: 1vh;
-    font-size: 5vh;
-    text-align: center;
-    background-color:  rgb(233, 174, 115);
+    background-color: rgba(251, 251, 251, 0.65);
+    resize: inherit;
 }
 .black-square{
-    padding-top: 1vh;
-    font-size: 5vh;
+    background-color: rgba(38, 37, 134, 0.65);
+    resize: inherit;
+}
+.squares{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
-    background-color:  rgb(139, 92, 61);
+    width: 80vh;
+    height: 80vh;
+    resize: inherit;
 }
-.white-square:hover {
-    background-color: rgb(255, 158, 89);
+.squares img{
+    padding-top: 0.5vh;
+    width: 9vh;
+    height: 9vh;
+    color: rgba(255, 255, 118, 0.65);
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+
 }
-.black-square:hover{
-    background-color: rgb(255, 158, 89);
+#pawn-promotion{
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    width:42vh;
+    height:42vh;
+}
+#pawn-promotion button{
+    border:0;
+    height:18vh;
+    width: 18vh;
+    background-color:darkgray;
+    border-bottom: 0.5vh solid grey;
+    outline:transparent;
+    border-radius: 0.6vh;
+    font-size: 10vh;
+}
+#pawn-promotion button:hover{
+    background-color: grey;
+}
+#r{
+    margin-left: 1vh;
+    margin-top: 2vh;
+    justify-self: left;
+    margin-bottom:2vh;
+}
+#n{
+    margin-left: 1vh;
+    justify-self: left;
+    margin-bottom:2vh;
+}
+#q{
+    margin-top: 2vh;
+    margin-right: 1vh;
+    justify-self: right;
+    margin-bottom:2vh;
+}
+#b{
+    margin-right: 1vh;
+    justify-self: right;
+    margin-bottom:2vh;
 }

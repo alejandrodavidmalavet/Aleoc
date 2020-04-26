@@ -1,145 +1,142 @@
 <html>
     <head>
-        <script src="https://kit.fontawesome.com/194bc1bf89.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="images/Icon.png">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="gamecenter.css">
-        <link rel="stylesheet" href="chessboard.css">
-        <link rel="stylesheet" href="scoreboard.css">
+        <script src='https://kit.fontawesome.com/194bc1bf89.js' crossorigin='anonymous'></script>
+        <link rel='icon' href='images/bK.png'>
+        <link rel='stylesheet' href='gamecenter.css'>
+        <link rel='stylesheet' href='chessboard.css'>
+        <link rel='stylesheet' href='game_log.css'>
+        <title>Online Chess</title>
     </head>
-    <body>
-        <title>
-            Online Chess
-        </title>
-        <div class="gamecenter">
-            <div class="game-view">
-                <div class="chessboard-border">
-                <div class="chessboard">
-                    <div class="ranks">
-                    <div class="rank">8</div>
-                    <div class="rank">7</div>
-                    <div class="rank">6</div>
-                    <div class="rank">5</div>
-                    <div class="rank">4</div>
-                    <div class="rank">3</div>
-                    <div class="rank">2</div>
-                    <div class="rank">1</div>
-                    </div>
-                    <div class="squares">
-                    <div class="white-square" num="0"id="a8" onclick="main('a8')" index ="0"><i class="fas fa-chess-rook" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="1" id="b8" onclick="main('b8')" index ="1"><i class="fas fa-chess-knight" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="2"id="c8" onclick="main('c8')" index ="2"><i class="fas fa-chess-bishop" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="3"id="d8" onclick="main('d8')" index ="3"><i class="fas fa-chess-queen" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="4"id="e8" onclick="main('e8')" index ="4"><i class="fas fa-chess-king" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="5"id="f8" onclick="main('f8')" index ="5"><i class="fas fa-chess-bishop" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="6"id="g8" onclick="main('g8')" index ="6"><i class="fas fa-chess-knight" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="7"id="h8" onclick="main('h8')" index ="7"><i class="fas fa-chess-rook" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="8"id="a7" onclick="main('a7')" index ="8"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="9"id="b7" onclick="main('b7')" index ="9"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="10"id="c7" onclick="main('c7')" index ="10"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="11"id="d7" onclick="main('d7')" index ="11"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="12"id="e7" onclick="main('e7')" index ="12"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="13"id="f7" onclick="main('f7')" index ="13"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="black-square" num="14"id="g7" onclick="main('g7')" index ="14"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="15"id="h7" onclick="main('h7')" index ="15"><i class="fas fa-chess-pawn" style="color: rgb(41, 19, 7);"></i></div>
-                    <div class="white-square" num="16"id="a6" onclick="main('a6')"></div>
-                    <div class="black-square" num="17"id="b6" onclick="main('b6')"></div>
-                    <div class="white-square" num="18"id="c6" onclick="main('c6')"></div>
-                    <div class="black-square" num="19"id="d6" onclick="main('d6')"></div>
-                    <div class="white-square" num="20"id="e6" onclick="main('e6')"></div>
-                    <div class="black-square" num="21"id="f6" onclick="main('f6')"></div>
-                    <div class="white-square" num="22"id="g6" onclick="main('g6')"></div>
-                    <div class="black-square" num="23"id="h6" onclick="main('h6')"></div>
-                    <div class="black-square" num="24"id="a5" onclick="main('a5')"></div>
-                    <div class="white-square" num="25"id="b5" onclick="main('b5')"></div>
-                    <div class="black-square" num="26"id="c5" onclick="main('c5')"></div>
-                    <div class="white-square" num="27"id="d5" onclick="main('d5')"></div>
-                    <div class="black-square" num="28"id="e5" onclick="main('e5')"></div>
-                    <div class="white-square" num="29"id="f5" onclick="main('f5')"></div>
-                    <div class="black-square" num="30"id="g5" onclick="main('g5')"></div>
-                    <div class="white-square" num="31"id="h5" onclick="main('h5')"></div>
-                    <div class="white-square" num="32"id="a4" onclick="main('a4')"></div>
-                    <div class="black-square" num="33"id="b4" onclick="main('b4')"></div>
-                    <div class="white-square" num="34"id="c4" onclick="main('c4')"></div>
-                    <div class="black-square" num="35"id="d4" onclick="main('d4')"></div>
-                    <div class="white-square" num="36"id="e4" onclick="main('e4')"></div>
-                    <div class="black-square" num="37"id="f4" onclick="main('f4')"></div>
-                    <div class="white-square" num="38"id="g4" onclick="main('g4')"></div>
-                    <div class="black-square" num="39"id="h4" onclick="main('h4')"></div>
-                    <div class="black-square" num="40"id="a3" onclick="main('a3')"></div>
-                    <div class="white-square" num="41"id="b3" onclick="main('b3')"></div>
-                    <div class="black-square" num="42"id="c3" onclick="main('c3')"></div>
-                    <div class="white-square" num="43"id="d3" onclick="main('d3')"></div>
-                    <div class="black-square" num="44"id="e3" onclick="main('e3')"></div>
-                    <div class="white-square" num="45"id="f3" onclick="main('f3')"></div>
-                    <div class="black-square" num="46"id="g3" onclick="main('g3')"></div>
-                    <div class="white-square" num="47"id="h3" onclick="main('h3')"></div>
-                    <div class="white-square" num="48"id="a2" onclick="main('a2')" index ="16"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="49"id="b2" onclick="main('b2')" index ="17"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="white-square" num="50"id="c2" onclick="main('c2')" index ="18"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="51"id="d2" onclick="main('d2')" index ="19"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="white-square" num="52"id="e2" onclick="main('e2')" index ="20"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="53"id="f2" onclick="main('f2')" index ="21"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="white-square" num="54"id="g2" onclick="main('g2')" index ="22"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="55"id="h2" onclick="main('h2')" index ="23"><i class="fas fa-chess-pawn" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="56"id="a1" onclick="main('a1')" index ="24"><i class="fas fa-chess-rook" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="white-square" num="57"id="b1" onclick="main('b1')" index ="25"><i class="fas fa-chess-knight" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="58"id="c1" onclick="main('c1')" index ="26"><i class="fas fa-chess-bishop" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="white-square" num="59"id="d1" onclick="main('d1')" index ="27"><i class="fas fa-chess-queen" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="60"id="e1" onclick="main('e1')" index ="28"><i class="fas fa-chess-king" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="white-square" num="61"id="f1" onclick="main('f1')" index ="29"><i class="fas fa-chess-bishop" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="black-square" num="62"id="g1" onclick="main('g1')" index ="30"><i class="fas fa-chess-knight" style="color: rgb(255, 235, 211);"></i></div>
-                    <div class="white-square" num="63"id="h1" onclick="main('h1')" index ="31"><i class="fas fa-chess-rook" style="color: rgb(255, 235, 211);"></i></div>
-                    </div>
-                    <div class="files">
-                    <div>a</div>
-                    <div>b</div>
-                    <div>c</div>
-                    <div>d</div>
-                    <div>e</div>
-                    <div>f</div>
-                    <div>g</div>
-                    <div>h</div>
-                    </div>
-                </div>
-                <div class="moves-record">
+    <body style='background-color:black'>
+        <div id="sidebar">
+            <div>Chess</div>
+            <div>by Alejandro David Malavet</div>
+            
+        </div>
+        <div id='main-container'>
+            <div class='chessboard'>
+                <img src='images/overlay.png' id='overlay'><img>
+                <div class='squares' onmouseleave="hideMove(true)">
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a8' onclick='main("a8")'><img src="images/bR.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b8' onclick='main("b8")'><img src="images/bN.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c8' onclick='main("c8")'><img src="images/bB.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d8' onclick='main("d8")'><img src="images/bQ.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e8' onclick='main("e8")'><img src="images/bK.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f8' onclick='main("f8")'><img src="images/bB.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g8' onclick='main("g8")'><img src="images/bN.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h8' onclick='main("h8")'><img src="images/bR.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a7' onclick='main("a7")'><img src="images/bP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b7' onclick='main("b7")'><img src="images/bP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c7' onclick='main("c7")'><img src="images/bP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d7' onclick='main("d7")'><img src="images/bP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e7' onclick='main("e7")'><img src="images/bP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f7' onclick='main("f7")'><img src="images/bP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g7' onclick='main("g7")'><img src="images/bP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h7' onclick='main("h7")'><img src="images/bP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a6' onclick='main("a6")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b6' onclick='main("b6")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c6' onclick='main("c6")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d6' onclick='main("d6")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e6' onclick='main("e6")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f6' onclick='main("f6")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g6' onclick='main("g6")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h6' onclick='main("h6")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a5' onclick='main("a5")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b5' onclick='main("b5")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c5' onclick='main("c5")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d5' onclick='main("d5")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e5' onclick='main("e5")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f5' onclick='main("f5")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g5' onclick='main("g5")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h5' onclick='main("h5")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a4' onclick='main("a4")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b4' onclick='main("b4")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c4' onclick='main("c4")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d4' onclick='main("d4")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e4' onclick='main("e4")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f4' onclick='main("f4")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g4' onclick='main("g4")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h4' onclick='main("h4")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a3' onclick='main("a3")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b3' onclick='main("b3")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c3' onclick='main("c3")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d3' onclick='main("d3")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e3' onclick='main("e3")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f3' onclick='main("f3")'></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g3' onclick='main("g3")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h3' onclick='main("h3")'></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a2' onclick='main("a2")'><img src="images/wP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b2' onclick='main("b2")'><img src="images/wP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c2' onclick='main("c2")'><img src="images/wP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d2' onclick='main("d2")'><img src="images/wP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e2' onclick='main("e2")'><img src="images/wP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f2' onclick='main("f2")'><img src="images/wP.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g2' onclick='main("g2")'><img src="images/wP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h2' onclick='main("h2")'><img src="images/wP.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='a1' onclick='main("a1")'><img src="images/wR.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='b1' onclick='main("b1")'><img src="images/wN.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='c1' onclick='main("c1")'><img src="images/wB.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='d1' onclick='main("d1")'><img src="images/wQ.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='e1' onclick='main("e1")'><img src="images/wK.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='f1' onclick='main("f1")'><img src="images/wB.png"></img></div>
+                    <div class='black-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='g1' onclick='main("g1")'><img src="images/wN.png"></img></div>
+                    <div class='white-square' onmouseleave="hideMove()" onmouseover="showMove(this)" id='h1' onclick='main("h1")'><img src="images/wR.png"></img></div>
                 </div>
             </div>
-            </div>
-            <div class="scoreboard">
-                <header>
-                    Scoreboard
-                </header>
-                <div class="scores">
-                    <header>
-                        <p>
-                            White
-                        </p>
-                        <p id="white-score">
-                            0
-                        </p>
-                    </header>
-                    <div class="pieces" id="white-pieces"></div>
+            <div id='game-log'>
+                <div class="player-console">
+                    <div class="profile"id="black-profile"><i class="fas fa-user-alt"></i></div>
+                    <div class="scoreboard">
+                        <div class="score" id="black-score"></div>
+                        <div id="black-captured-pieces" class="captured-pieces"></div>
+                    </div>
                 </div>
-                <div class="scores">
-                    <header>
-                        <p>
-                            Black
-                        </p>
-                        <p id="black-score">
-                            0
-                        </p>
-                    </header>
-                    <div class="pieces" id="black-pieces"></div>
+                <div id="move-tracker"></div>
+                <div class="player-console">
+                    <div class="profile" id="white-profile"><i class="fas fa-user-alt"></i></div>
+                    <div class="scoreboard">
+                        <div class="score" id="white-score"></div>
+                        <div id="white-captured-pieces"class="captured-pieces"></div>
+                    </div>
                 </div>
-                <div class="scores" id="my-logo">
-                    <img src="images/Icon.png"></img>
+                <div id="controls">
+                    <button class="triggers" onclick="newGame()"><i class="fas fa-plus"></i></button>
+                    <button class="triggers" onclick="undo(true)"><i class="fas fa-less-than"></i></button>
+                    <button class="triggers" onclick="redo(true)"><i class="fas fa-greater-than"></i></button>
+                    <button class="triggers" onclick="flipBoard()"><i class="fas fa-retweet"></i></button>
+                    <button onclick="openEngineSettings()"><i class="fas fa-cog"></i></button>
                 </div>
             </div>
         </div>
-        <div class="About">
+        <div id='pop-up-window'>
+            <div id='settings'>
+                <header>Settings
+                    <button id="close-settings" onclick='Close()'><i class="fas fa-times"></i></button>
+                </header>
+                <div id='set-difficulty'>
+                    <header>
+                        Set Engine Difficulty
+                    </header>
+                    <div id="difficulty-buttons">
+                        <div><button id="B1"onclick="setDepth(1,this)">1</button> Easiest</div>
+                        <div><button id="B2"onclick="setDepth(2,this)">2</button></div>
+                        <div><button id="B3"onclick="setDepth(3,this)">3</button></div>
+                        <div><button id="B4"onclick="setDepth(4,this)">4</button></div>
+                        <div><button id="B5"onclick="setDepth(5,this)">5</button>Hardest</div>
+                    </div>
+                </div>
+                <div id='set-team'>
+                    <header>
+                        Set Engine Team
+                    </header>
+                    <div id="team-buttons">
+                        <div><button id="TT"onclick="setEngine(undefined,this)"><i class="fas fa-user-alt"></i></button>None</div>
+                        <div><button id="Tw"onclick="setEngine(1,this)"><i class="fas fa-laptop"></i></button>White</div>
+                        <div><button id="Tb"onclick="setEngine(0,this)"><i class="fas fa-laptop"></i></button>Black</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
-    <script src="pieces.js"></script>
-
+    <script src='main.js'></script>
 </html>

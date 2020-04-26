@@ -1,0 +1,118 @@
+#game-log{
+    display: grid;
+    grid-template-rows: 10vh 48vh 10vh 10vh;
+    margin-left: 2vh;
+    width:38vh;
+    font-family: Futura;
+    margin-top: 1vh;
+}
+#move-tracker{
+    border-top: 1vh solid white;
+    border-bottom: 1vh solid white;
+    padding-left: 1vh;
+    color:rgb(50, 50, 50);
+    background-color: white;
+    font-size: 3vh;
+    overflow: scroll;
+}
+.move{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+#controls{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color:rgb(236, 236, 236);
+    align-items: center;
+    margin-top: 2.5vh;
+}
+#controls button{
+    outline: none;
+    background-color:transparent;
+    font-size: 3.5vh;
+    border: 0;
+    justify-self: center;
+    color:rgb(50, 50, 50);
+    padding-top: 0.4vh;
+}
+#controls button:hover{
+    font-size: 4vh;
+}
+#controls button:active{
+    font-size: 4.5vh;
+}
+.player-console{
+    background-color: rgb(236, 236, 236);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height:10vh;
+}
+.profile{
+    position: relative;
+    display: grid;
+    height:8vh;
+    width:8vh;
+    background-color:darkgray;
+    text-align: center;
+    border-radius: 0.4vh;
+    border-bottom: 0.2vh solid grey;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+.profile i{
+    position: absolute;
+    align-self: center;
+    font-size: 5vh;
+    justify-self: center;
+}
+#white-profile{
+    color:rgb(240, 240, 240);
+}
+#black-profile{
+    color:rgb(50, 50, 50);
+}
+.scoreboard{
+    background-color: rgb(128, 128, 128);
+    margin: 0.6vh;
+}
+#black-score{
+    margin-bottom: 1.2vh;
+    margin-top: 1.2vh;
+}
+#white-score{
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+.scoreboard{
+    background-color: transparent;
+    max-width: auto;
+}
+.score{
+    color:darkgray;
+    height:3vh;
+    font-size:2.5vh;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+.captured-pieces img{
+    position: absolute;
+    height:3.5vh;
+    width:3.5vh;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
