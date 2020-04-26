@@ -1,16 +1,148 @@
-.gamecenter{
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-    justify-content: center;
+body{
     display: flex;
-    flex-direction: row;
-    background-color: 	rgb(235, 203, 164);
+    justify-content: center;
+}
+#main-container{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
     margin: auto;
-    width: 110vh;
-    margin-top: 5vh;
-    border-radius: 5px;
-    border-width: 0.8vh;
-    border-style: solid;
-    border-color:rgb(41, 19, 7);
-    border-radius: 5px;
+    position: absolute;
+    outline: 2vh solid rgb(54, 54, 54);
+    background-color: rgb(54, 54, 54);
+    align-self: center;
+}
+#pop-up-window{
+    padding-top: 19vh;
+    padding-right:59vh;
+    padding-left:19vh;
+    padding-bottom: 19vh;
+    position: relative;
+    background-color: rgba(87, 87, 87, 0.876);
+    font-family: Futura;
+    text-transform: uppercase;
+    align-self: center;
+}
+#settings{
+    height:42vh;
+    background: lightgray;
+    width:42vh;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#settings header{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    background-color: gray;
+    text-align: start;
+    padding-left: 2vh;
+    font-size: 3vh;
+    padding-top: 1vh;
+    letter-spacing: 0.2vh;
+    margin-bottom: 2vh;
+}
+#close-settings{
+    font-size:3vh;
+    color: lightgrey;
+    background-color: transparent;
+    border-color: transparent;
+    outline: transparent;
+    padding-bottom: 1.2vh;
+    padding-top: 0.5vh;
+}
+#close-settings:hover{
+    color: rgb(177, 177, 177);
+}
+#set-difficulty{
+    margin: 1vh;
+    border-bottom: 0.3vh solid grey;
+    letter-spacing: 0.1vh;
+}
+#set-difficulty header{
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    font-size: 1.5vh;
+    text-align: start;
+    padding-left: 2vh;
+}
+#difficulty-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin: 1vh;
+    font-size: 1.3vh;
+    color: grey;
+    justify-items: center;
+    height: 7vh;
+}
+#difficulty-buttons div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#difficulty-buttons div button{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    height:5vh;
+    width: 5vh;
+    border-radius:6vh;
+    outline: transparent;
+    background-color: rgb(180, 180, 180);
+    font-size: 3vh;
+    color:rgb(224, 224, 224);
+    border: 0;
+}
+#difficulty-buttons div button:hover{
+    background-color: rgb(151, 151, 151);
+}
+#set-team{
+    margin: 1vh;
+    letter-spacing: 0.1vh;
+}
+#set-team header{
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    font-size: 1.5vh;
+    text-align: start;
+    padding-left: 2vh;
+}
+#team-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 1vh;
+    font-size: 1.3vh;
+    color: grey;
+    justify-items: center;
+    height: 12vh;
+}
+#team-buttons div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+#team-buttons div button{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    height:10vh;
+    width: 10vh;
+    border-radius:6vh;
+    outline: transparent;
+    background-color: rgb(180, 180, 180);
+    font-size: 4vh;
+    color:white;
+    border: 0;
+}
+#team-buttons div button:hover{
+    background-color: rgb(151, 151, 151);
+}
+#team-buttons #Tb i{
+    color: rgb(50, 50, 50);
+}
+#team-buttons #Tw i{
+    color: rgb(240, 240, 240);
+}
+#team-buttons #TT i{
+    color: rgb(220, 220, 220);
 }
